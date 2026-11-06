@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f6fb;
+
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+
+    color: #172554;
+
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #64748b;
+
+    margin-bottom: 35px;
+}
+
+.form-card,
+.table-card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-top: 0;
+
+    color: #1e3a8a;
+}
+
+form {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+
+    min-width: 180px;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+th {
+    padding: 14px;
+
+    background: #172554;
+
+    color: white;
+
+    text-align: center;
+}
+
+td {
+    padding: 14px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.status {
+    display: inline-block;
+
+    min-width: 35px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+.status-0 {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+.status-1 {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+.toggle-btn {
+    background: #10b981;
+}
+
+.toggle-btn:hover {
+    background: #059669;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input,
+    button {
+        width: 100%;
+    }
+
+}
